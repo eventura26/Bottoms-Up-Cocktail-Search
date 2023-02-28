@@ -1,0 +1,128 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: #f3dde0; */
+  /* background will change */
+}
+
+.App {
+  text-align: center;
+}
+
+.title{
+  font-size: 44px;
+}
+
+#search-bar{
+  width:188px;
+  height:36px;
+  border-radius: 38px;
+  background-color: #FFD9DF;
+  color: #2B151A;
+  padding-left: 22px;
+  border:none;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+#search-btn{
+  width: 112px;
+  height:36px;
+  border-radius: 38px;
+  background-color: #FFDCBD;
+  color: #2C1600;
+  border: none;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-left: 8px;
+}
+
+.nav-bar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:48px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.Home, .card-container, .list-container-wrap{
+display: flex;
+justify-content: center;
+} 
+
+.home-card, .list-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:552px;
+  margin-top:36px;
+  margin-bottom:36px;
+  border-radius: 8px;
+  background-color: #9A4059;
+  color:#FFFFFF;
+}
+
+.random-btn{
+  background-color: #FFDCBD;
+  color: #2C1600;
+  width: 224px;
+  height: 36px;
+  border-radius: 38px;
+  font-size:20px;
+  border: none;
+  margin-bottom: 12px;
+}
+
+.drink-card{
+  background-color: #F3DDE0;
+  color: #524346;
+  width: 464px;
+  border-radius: 8px;
+  margin: 40px;
+}
+
+.img-ingredient-set{
+  display: flex;
+  flex-direction: row;
+}
+
+img{
+  margin-left: 32px;
+}
+
+ul{
+  text-align: left;
+}
+
+.directions{
+  padding: 16px;
+}
+
+.list-card{
+  background-color: #F3DDE0;
+  border-radius: 8px;
+  color: #524346;
+  width:464px;
+  height: 400px;
+  margin:40px;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 10px;
+}
+
+.list-card img{
+  width:150px;
+}
+
+.spirit-btns{
+  background-color: #FFDCBD;
+  color: #2C1600;
+  width: 100px;
+  height: 36px;
+  border-radius: 38px;
+  font-size:20px;
+  border: none;
+  margin: 10px;
+}
