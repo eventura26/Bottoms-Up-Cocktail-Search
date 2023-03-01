@@ -4,10 +4,8 @@ import Nav from './components/Nav';
 import CocktailList from './components/CocktailList';
 import FilteredCocktails from './components/FilteredCocktails';
 import SearchResults from './components/SearchResults';
-import ExitPage from './components/ExitPage';
 import { useState } from 'react';
 import { Route, Routes } from 'react-router';
-import { Link } from 'react-router-dom';
 
 function App(){
 
@@ -34,7 +32,6 @@ let [userOfAge, setUserOfAge] = useState(false)
           <Route path="/cocktails" element={<CocktailList/>}/>
           <Route path="/cocktails/:id" element={<FilteredCocktails/>}/>        
           <Route path="/searchresults/:name" element={<SearchResults/>}/>
-          <Route path="/exit" element={<ExitPage />}/>
         </Routes>
         
       </header>
@@ -42,8 +39,10 @@ let [userOfAge, setUserOfAge] = useState(false)
          ):
 <div className='age-verification'>
         <h2>You must be 21 or over to enter!</h2>
+        <div>
         <button onClick={ofAge}>I am 21 or over</button> 
-        <button onClick={notOfAge}>I am under 21</button>
+        <button onClick={notOfAge}><a href="https://www.responsibility.org/prevent-underage-drinking">I am under 21</a></button>
+        </div>
       </div>
       
 
