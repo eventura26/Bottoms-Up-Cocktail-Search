@@ -7,6 +7,9 @@ import SearchResults from './components/SearchResults';
 import { Route, Routes } from 'react-router';
 
 function App() {
+  const userAge = null
+
+
 
   return (
     <div className="App">

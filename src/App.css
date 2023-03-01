@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&display=swap');
+*{
+  font-family: 'Encode Sans Condensed', sans-serif;
+
+}
 body{
-  font-family: Arial, Helvetica, sans-serif;
-  /* background-color: #f3dde0; */
-  /* background will change */
+  background-image:url('https://img.freepik.com/free-vector/engraving-hand-drawn-tropical-leaves-background_23-2148961423.jpg?w=996&t=st=1677637817~exp=1677638417~hmac=9e1e48e742972f5162375858104468f601f0a5ffcbdca492c9c8e29e18f6ed56');
+  background-size:cover;
+  font-family: 'Encode Sans Condensed', sans-serif;
+
 }
 
 .App {
@@ -9,15 +16,21 @@ body{
 }
 
 .title{
-  font-size: 44px;
+  font-size: 48px;
+  font-family: 'Rampart One', cursive;
+}
+
+#welcome{
+  font-family: 'Rampart One', cursive;
+  font-size: 24px;
 }
 
 #search-bar{
   width:188px;
   height:36px;
   border-radius: 38px;
-  background-color: #FFD9DF;
-  color: #2B151A;
+  background-color: #c8e6ff;
+  color: #001e2e;
   padding-left: 22px;
   border:none;
   font-size: 20px;
@@ -28,12 +41,23 @@ body{
   width: 112px;
   height:36px;
   border-radius: 38px;
-  background-color: #FFDCBD;
-  color: #2C1600;
+  background-color: #cde8df;
+  color: #00201a;
   border: none;
   font-weight: bolder;
   font-size: 20px;
   margin-left: 8px;
+  cursor: pointer;
+}
+
+.header{
+  color:#06201a;
+  height: 136px;
+}
+
+.nav-link{
+  text-decoration: none;
+  color: #410002;
 }
 
 .nav-bar{
@@ -58,24 +82,26 @@ justify-content: center;
   margin-top:36px;
   margin-bottom:36px;
   border-radius: 8px;
-  background-color: #9A4059;
+  background-color: #4b635c;
   color:#FFFFFF;
 }
 
 .random-btn{
-  background-color: #FFDCBD;
-  color: #2C1600;
+  background-color: #cde8df;
+  color: #06201a;
   width: 224px;
   height: 36px;
   border-radius: 38px;
   font-size:20px;
+  font-weight: bold;
   border: none;
   margin-bottom: 12px;
+  cursor: pointer;
 }
 
 .drink-card{
-  background-color: #F3DDE0;
-  color: #524346;
+  background-color: #dbe5e0;
+  color: #3f4946;
   width: 464px;
   border-radius: 8px;
   margin: 40px;
@@ -99,9 +125,9 @@ ul{
 }
 
 .list-card{
-  background-color: #F3DDE0;
+  background-color: #dbe5e0;
+  color: #3f4946;
   border-radius: 8px;
-  color: #524346;
   width:464px;
   height: 400px;
   margin:40px;
@@ -114,15 +140,19 @@ ul{
 
 .list-card img{
   width:150px;
+  cursor: pointer;
+
 }
 
 .spirit-btns{
-  background-color: #FFDCBD;
-  color: #2C1600;
+  background-color: #cde8df;
+  color: #00201a;
   width: 100px;
   height: 36px;
   border-radius: 38px;
   font-size:20px;
+  font-weight: bold;
   border: none;
   margin: 10px;
+  cursor: pointer;
 }

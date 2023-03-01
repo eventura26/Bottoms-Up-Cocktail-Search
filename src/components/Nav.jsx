@@ -30,16 +30,17 @@ const handleChange = (e) => {
 
     return(
         <div className="header">
-            <h1 className="title">APP NAME HERE</h1>
+            <h1 className="title">Drink Up!</h1>
         <div className="nav-bar">
-            <Link to="/">Home</Link>
-            <Link to="/cocktails">Cocktail List</Link>
+            <Link className="nav-link" to="/">Home</Link>
+            <Link className="nav-link" to="/cocktails">Cocktail List</Link>
             <div className="btn-div">
                 <input onChange={handleChange} id="search-bar" type="text" placeholder="Let me have a..."/>
                 <input onClick={() => {searchCocktail(); }} id="search-btn" type="button" value="search" />
             </div>
         </div>
         </div>
+
     )
 
 }
