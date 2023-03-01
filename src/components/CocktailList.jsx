@@ -32,7 +32,7 @@ export default function CocktailList() {
     
     <div className="list-container-wrap">
         <div className="list-container">
-            <p>cocktail lists by spirit below</p>
+            <p id="welcome">cocktail lists by spirit below</p>
             <div className="btns-row-one">
                 <button className="spirit-btns" onClick={() => getCocktailsBySpirit(GIN_URL)}>gin</button>
                 <button className="spirit-btns" onClick={() => getCocktailsBySpirit(VODKA_URL)}>vodka</button>
@@ -49,13 +49,13 @@ export default function CocktailList() {
             {cocktails.map((cocktail, id) =>(
                 <div className="list-item"  onClick={() => showCocktail(cocktail.idDrink)} key={id}>
                     <h4>{cocktail.strDrink}</h4>
-                    <img src={cocktail.strDrinkThumb} width={"200px"} alt={cocktail.strDrink} />
+                    <img className="list-img" src={cocktail.strDrinkThumb} width={"200px"} alt={cocktail.strDrink} />
                 </div>
              ))} 
              </div>       
         </div>
     </div>    
-    ): <div>
-        loading..
+    ): <div className="loading">
+        drinks on the way..
     </div>
 }

@@ -23,10 +23,10 @@ export default function Search(){
         <div className='card-container'>
         <div className='home-card'>
             <div className='drink-card'>
-                    <h3>{drink.strDrink}</h3>
+                    <h3 id="welcome">{drink.strDrink}</h3>
 
                     <div className='img-ingredient-set'>
-                        <img width={"200px"} height={"200px"} src={drink.strDrinkThumb} alt={drink.strDrink} />
+                        <img className="selected-drink-img" width={"200px"} height={"200px"} src={drink.strDrinkThumb} alt={drink.strDrink} />
                         <ul>
                             <p>Ingredients:</p>
                             <p>{drink.strIngredient1} {drink.strMeasure1}</p>
@@ -44,8 +44,9 @@ export default function Search(){
         </div>
     
     ): 
-        <div> 
-            you're cut off
+        <div className='loading'> 
+            <p>404 not found, you're cut off</p> 
+            <img height={"500px"} alt={"error-img"}src="https://i.redd.it/fo84pzha0m611.jpg" />
         </div>
     
 }

@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&family=Rampart+One&display=swap');
 *{
   font-family: 'Encode Sans Condensed', sans-serif;
 
 }
+
 body{
   background-image:url('https://img.freepik.com/free-vector/engraving-hand-drawn-tropical-leaves-background_23-2148961423.jpg?w=996&t=st=1677637817~exp=1677638417~hmac=9e1e48e742972f5162375858104468f601f0a5ffcbdca492c9c8e29e18f6ed56');
   background-size:cover;
@@ -55,9 +55,28 @@ body{
   height: 136px;
 }
 
+.title-link{
+  text-decoration: none;
+  color:#06201A;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.title-link:hover{
+  text-decoration: none;
+  color:rgb(155, 56, 16);
+  transform: scale(5.2);
+}
+
 .nav-link{
   text-decoration: none;
   color: #410002;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover{
+  color: hotpink;
+  transform: scale(1.1);
 }
 
 .nav-bar{
@@ -81,9 +100,11 @@ justify-content: center;
   width:552px;
   margin-top:36px;
   margin-bottom:36px;
+  padding: 10px;
   border-radius: 8px;
   background-color: #4b635c;
   color:#FFFFFF;
+  font-weight: bolder;
 }
 
 .random-btn{
@@ -105,6 +126,10 @@ justify-content: center;
   width: 464px;
   border-radius: 8px;
   margin: 40px;
+}
+
+#list-drink-selection{
+  margin-top: 20px;
 }
 
 .img-ingredient-set{
@@ -155,4 +180,24 @@ ul{
   border: none;
   margin: 10px;
   cursor: pointer;
+}
+
+.list-img{
+  margin: 0 auto;
+}
+
+.selected-drink-img{
+  align-self: center;
+}
+
+#back-link{
+  text-decoration:underline;
+  margin-right: 500px;
+  color:#ffffff;
+
+}
+
+.loading{
+margin-top: 100px;
+
 }

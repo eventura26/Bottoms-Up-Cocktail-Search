@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { ID_URL } from '../global'
+import { Link } from 'react-router-dom'
 import axios from 'axios'
 
 export default function FilteredCocktails() {
@@ -16,17 +17,19 @@ export default function FilteredCocktails() {
             setDrink(response.data.drinks[0])
         }
         selectedCocktail()
-        },[])
+        },[id])
     
 
     return drink? (
-        <div className='card-container'>
+        <div className='card-container'>        
         <div className='home-card'>
-            <div className='drink-card'>
-                    <h3>{drink.strDrink}</h3>
+        <Link id="back-link" to="/cocktails">Go Back</Link>
+
+            <div className='drink-card' id="list-drink-selection">
+                    <h3 id="welcome">{drink.strDrink}</h3>
 
                     <div className='img-ingredient-set'>
-                        <img width={"200px"} height={"200px"} src={drink.strDrinkThumb} alt={drink.strDrink} />
+                        <img className="selected-drink-img" width={"200px"} height={"200px"} src={drink.strDrinkThumb} alt={drink.strDrink} />
                         <ul>
                             <p>Ingredients:</p>
                             <p>{drink.strIngredient1} {drink.strMeasure1}</p>
@@ -42,7 +45,7 @@ export default function FilteredCocktails() {
             </div>
         </div>
         </div>
-    ) : <div>
+    ) : <div className='loading'>
         working on that drink for ya..
     </div>
 }

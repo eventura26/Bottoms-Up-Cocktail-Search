@@ -1,4 +1,4 @@
-export default function Entry(){
+export default function ExitPage(){
    
     return(
         <div className="age-check">

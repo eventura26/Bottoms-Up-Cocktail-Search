@@ -33,9 +33,9 @@ export default function RandomDrink(){
     <button className="random-btn" onClick={getThisGuyADrinkAlready}>just give me a drink</button>
     {randomDrink && (
         <div className="drink-card">
-          <h3>{randomDrink.strDrink}</h3>
+          <h3 id="welcome">{randomDrink.strDrink}</h3>
           <div className="img-ingredient-set">
-            <img width={"200px"} height={"200px"} src={randomDrink.strDrinkThumb} alt={randomDrink.strDrink} />
+            <img className="selected-drink-img" width={"200px"} height={"200px"} src={randomDrink.strDrinkThumb} alt={randomDrink.strDrink} />
             <ul>
               <p>Ingredients:</p>
               <p>{randomDrink.strIngredient1} {randomDrink.strMeasure1}</p>
