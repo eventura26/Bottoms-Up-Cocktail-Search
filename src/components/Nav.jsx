@@ -29,7 +29,7 @@ export default function Nav() {
 
     return(
         <div className="header">
-            <Link className="title-link"to="/"><h1 className="title">Drink Up!</h1></Link>
+            <Link className="title-link"to="/"><h1 className="title">Bottoms Up!</h1></Link>
         <div className="nav-bar">
             <Link className="nav-link" to="/">Home</Link>
             <Link className="nav-link" to="/cocktails">Cocktail List</Link>
