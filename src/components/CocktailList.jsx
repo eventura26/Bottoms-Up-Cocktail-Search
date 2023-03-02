@@ -4,10 +4,12 @@ import axios from "axios"
 import { GIN_URL, VODKA_URL, TEQUILA_URL, RUM_URL, BOURBON_URL, SCOTCH_URL, BRANDY_URL, COGNAC_URL } from "../global"
 
 export default function CocktailList() {
-    
+
     const [cocktails, setCocktails] = useState()
     let navigate = useNavigate()
 
+
+ 
     useEffect(() => {
         const getCocktails = async () =>{
             const response = await axios.get(GIN_URL)
@@ -34,7 +36,7 @@ export default function CocktailList() {
         <div className="list-container">
             <p id="welcome">cocktail lists by spirit below</p>
             <div className="btns-row-one">
-                <button className="spirit-btns" onClick={() => getCocktailsBySpirit(GIN_URL)}>gin</button>
+                <button className="spirit-btns color" onClick={() => getCocktailsBySpirit(GIN_URL)}>gin</button>
                 <button className="spirit-btns" onClick={() => getCocktailsBySpirit(VODKA_URL)}>vodka</button>
                 <button className="spirit-btns" onClick={() => getCocktailsBySpirit(RUM_URL)}>rum</button>
                 <button className="spirit-btns" onClick={() => getCocktailsBySpirit(TEQUILA_URL)}>tequila</button>

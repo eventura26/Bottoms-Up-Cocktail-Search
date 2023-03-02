@@ -19,6 +19,7 @@ An application a user can use to help them decide what drink they may want to or
 ### PostMVP
 - Include age verification page prior to access
 - Add a page where users can add their personal liquor bottles and filter what cocktails they could make with that
-- Somehow include a map that showcases the users closest bar 
 - Dark mode
 
+### Resources I used
+- For localstorage help: https://www.freecodecamp.org/news/how-to-use-localstorage-with-react-hooks-to-set-and-get-items/

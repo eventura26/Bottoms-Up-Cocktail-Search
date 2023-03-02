@@ -30,7 +30,7 @@ export default function RandomDrink(){
   }
   return(
     <>
-    <button className="random-btn" onClick={getThisGuyADrinkAlready}>just give me a drink</button>
+    <button className="random-btn" onClick={getThisGuyADrinkAlready}>surprise me!</button>
     {randomDrink && (
         <div className="drink-card">
           <h3 id="welcome">{randomDrink.strDrink}</h3>

@@ -6,7 +6,7 @@
 
 body{
   background-image:url('https://img.freepik.com/free-vector/engraving-hand-drawn-tropical-leaves-background_23-2148961423.jpg?w=996&t=st=1677637817~exp=1677638417~hmac=9e1e48e742972f5162375858104468f601f0a5ffcbdca492c9c8e29e18f6ed56');
-  background-size:cover;
+  background-size:100%;
   font-family: 'Encode Sans Condensed', sans-serif;
 
 }
@@ -48,6 +48,20 @@ body{
   font-size: 20px;
   margin-left: 8px;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+}
+
+
+#search-btn:hover, .random-btn:hover, .spirit-btns:hover{
+  background-color: #79f8db;
+  color: #005143;
+  transform: scale(1.1);
+}
+
+#search-btn:active, .random-btn:active, .spirit-btns:active{
+  color: #dbe5e0;
+  background-color: #3f4946;
 }
 
 .header{
@@ -118,6 +132,7 @@ justify-content: center;
   border: none;
   margin-bottom: 12px;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .drink-card{
@@ -149,6 +164,7 @@ ul{
   padding: 16px;
 }
 
+
 .list-card{
   background-color: #dbe5e0;
   color: #3f4946;
@@ -161,6 +177,11 @@ ul{
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: auto;
   grid-gap: 10px;
+  cursor: pointer;
+}
+
+.list-item:hover{
+  background-color: #c8e6ff;
 }
 
 .list-card img{
@@ -180,10 +201,12 @@ ul{
   border: none;
   margin: 10px;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .list-img{
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .selected-drink-img{
@@ -213,7 +236,7 @@ justify-content: center;
 margin: 0 auto ;
 margin-top: 300px;
 height: 150px;
-width:25%
+width:400px;
 }
 
 .age-verification button{
@@ -228,6 +251,16 @@ width:25%
   margin-left: 10px;
   margin-right: 10px;
   cursor: pointer;
+}
+
+.age-verification a:hover, button:hover{
+  background-color: #410002;
+  color: #ffffff;
+}
+
+.age-verification a:active, button:active{
+  background-color: #ffffff;
+  color: #ba1a1a;
 }
 
 a{

@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { SEARCH_URL } from '../global'
 import axios from 'axios'
+import Error from './Error'
 
 export default function Search(){
 
@@ -44,11 +45,7 @@ export default function Search(){
         </div>
     
     ): 
-        <div className='loading'> 
-            <p>404 not found, you're cut off</p> 
-            <img height={"500px"} alt={"error-img"}src="https://i.redd.it/fo84pzha0m611.jpg" />
-        </div>
-    
+     <Error />
 }
 
     
