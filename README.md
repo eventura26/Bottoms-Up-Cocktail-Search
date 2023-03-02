@@ -1,4 +1,4 @@
-# Drink-Up-Cocktail-Search
+# Bottoms-Up-Cocktail-Search
 
 ## Project Overview
 
@@ -23,3 +23,6 @@ An application a user can use to help them decide what drink they may want to or
 
 ### Resources I used
 - For localstorage help: https://www.freecodecamp.org/news/how-to-use-localstorage-with-react-hooks-to-set-and-get-items/
+
+### Link
+- https://bottoms-up.netlify.app/
