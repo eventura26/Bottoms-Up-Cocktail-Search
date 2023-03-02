@@ -270,3 +270,9 @@ a{
 }
 
 
+@media screen and (max-width: 401px) {
+  .age-verification {
+    width:350px;
+    height:200px
+  }
+}
