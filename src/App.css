@@ -270,17 +270,47 @@ a{
 }
 
 
-@media screen and (max-width: 401px) {
+@media screen and (max-width: 500px) {
 
   .age-wrap{
     position: absolute;
-    bottom:200px;
-    left: 25px;
+    bottom:500px;
+    left: 80px;
   }
 
   .age-verification {
     display:flex;
     width:350px;
     height:200px;
+  }
+
+  .home-card, .list-container{
+
+    width: 400px;
+
+  }
+
+  .drink-card{
+    border-radius: 0;
+    width: 420px;
+  }
+
+  .list-card{
+    width: 420px;
+    border-radius: 0;
+  }
+
+  .nav-bar{
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 20px;
+  }
+
+  #search-bar{
+    width: 130px;
+  }
+
+  #search-btn{
+    width:80px;
   }
 }
