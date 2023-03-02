@@ -44,6 +44,7 @@ function App() {
       </header>
     </div>
   ) : (
+    <div className='age-wrap'>
     <div className="age-verification">
       <h2>You must be 21 or over to enter!</h2>
       <div>
@@ -56,6 +57,7 @@ function App() {
           </a>
         </button>
       </div>
+    </div>
     </div>
   );
 }
