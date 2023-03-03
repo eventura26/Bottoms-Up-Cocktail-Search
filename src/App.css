@@ -360,8 +360,7 @@ a{
   }
 }
 
-@media screen and (max-width: 350px) {
-
+@media screen and (min-device-width: 300px) and (max-width: 400px) {
   .age-wrap{
     position: absolute;
     bottom:200px;
