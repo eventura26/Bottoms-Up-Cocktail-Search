@@ -315,6 +315,51 @@ a{
   }
 }
 
+@media screen and (min-width:410px) and (max-width: 500px) {
+
+  .age-wrap{
+    position: absolute;
+    bottom:200px;
+    left: 25px;
+  }
+
+  .age-verification {
+    display:flex;
+    width:350px;
+    height:200px;
+  }
+
+  .home-card, .list-container{
+    width: 360px;
+
+  }
+
+  .drink-card{
+    border-radius: 0;
+    width: 380px;
+  }
+
+  .list-card{
+    width: 380px;
+    border-radius: 0;
+  }
+
+  .nav-bar{
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+
+  #search-bar{
+    font-size: 14px;
+    width: 80px;
+  }
+
+  #search-btn{
+    width:80px;
+  }
+}
+
 @media screen and (max-width: 400px) {
 
   .age-wrap{
@@ -359,6 +404,8 @@ a{
     width:80px;
   }
 }
+
+
 
 @media screen and (min-device-width: 300px) and (max-width: 400px) {
   .age-wrap{
