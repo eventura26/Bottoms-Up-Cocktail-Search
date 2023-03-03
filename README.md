@@ -8,8 +8,9 @@ An application a user can use to help them decide what drink they may want to or
 ### API and Data Sample 
 - TheCocktailDB API - https://www.thecocktaildb.com/api.php
 
-### Wireframes
+### Wireframe & CHD
 - https://www.figma.com/file/ZAVGhd15Ny1Bi5fWQFbxxN/Project-2-Cocktail-App?t=AxYkPTFKvTeFEa0H-6
+- https://i.ibb.co/dg2Cd1N/Project-2-Diagram-drawio.png
 
 ### MVP
 - Fetch API succsessfully
