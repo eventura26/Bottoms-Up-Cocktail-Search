@@ -7,13 +7,10 @@ export default function CocktailList() {
 
     const [cocktails, setCocktails] = useState()
     let navigate = useNavigate()
-
-
  
     useEffect(() => {
         const getCocktails = async () =>{
             const response = await axios.get(GIN_URL)
-            console.log(response.data.drinks)
             setCocktails(response.data.drinks)
         }
         getCocktails()
@@ -22,7 +19,6 @@ export default function CocktailList() {
 
     const getCocktailsBySpirit = async (url) => {
         const response = await axios.get(url)
-        console.log(response.data.drinks)
         setCocktails(response.data.drinks)
     }
 

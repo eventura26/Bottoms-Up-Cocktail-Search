@@ -2,30 +2,17 @@ import { Link } from "react-router-dom"
 import { useState} from "react"
 import { useNavigate } from "react-router-dom"
 
-
-
 export default function Nav() {
-    let search = ''
     const [searchValue, setSearchValue] = useState("null")
-    // const [cocktail, setCocktail] = useState(null)
     let navigate = useNavigate()
     
     const handleChange = (e) => {
-        search+= e.target.value
-        setSearchValue(search)
+        setSearchValue(e.target.value)
     }
     
     const searchCocktail = () => {
-        search = searchValue
-        console.log(search)
-        console.log(searchValue)
-        // const response = await axios.get(SEARCH_URL + search)
-        // setCocktail(response.data.drinks[0])
-        // console.log(cocktail.strDrink);
-        navigate(`/searchresults/${search}`)
+        navigate(`/searchresults/${searchValue}`)
     }
-    
-
 
     return(
         <div className="header">
@@ -34,8 +21,10 @@ export default function Nav() {
             <Link className="nav-link" to="/">Home</Link>
             <Link className="nav-link" to="/cocktails">Cocktail List</Link>
             <div className="btn-div">
+                <form onSubmit={searchCocktail}>
                 <input onChange={handleChange} id="search-bar" type="text" placeholder="Let me have a..."/>
-                <input onClick={() => {searchCocktail(); }} id="search-btn" type="button" value="search" />
+                <input id="search-btn" type="submit" value="search" />
+                </form>
             </div>
         </div>
         </div>

@@ -13,7 +13,6 @@ export default function RandomDrink(){
     try {
       const response = await axios.get(RANDOM_URL);
       setRandomDrink(response.data.drinks[0]);
-      console.log(response)
     } catch (error) {
       setError(error);
     } finally {

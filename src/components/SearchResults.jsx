@@ -1,8 +1,7 @@
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { SEARCH_URL } from '../global'
 import axios from 'axios'
-import Error from './Error'
 
 export default function Search(){
 
@@ -10,15 +9,19 @@ export default function Search(){
 
     let {name} = useParams()
 
+    const navigate = useNavigate()
 
     useEffect(() => {
         let searchedCocktail = async () => {
-            const response = await axios.get(SEARCH_URL+ name)
-            console.log(response)
-            setDrink(response.data.drinks[0])
+            try {
+              const response = await axios.get(SEARCH_URL+ name)
+              setDrink(response.data.drinks[0])
+            } catch (error) {
+              navigate('/404')
+            }
         }
         searchedCocktail()
-        },[name])
+        },[name, navigate])
 
     return drink?(
         <div className='card-container'>
@@ -45,7 +48,7 @@ export default function Search(){
         </div>
     
     ): 
-     <Error />
+    <div>
+     <p>Let me check the back..</p>
+    </div>
 }
-
-    

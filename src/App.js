@@ -4,6 +4,7 @@ import Nav from './components/Nav';
 import CocktailList from './components/CocktailList';
 import FilteredCocktails from './components/FilteredCocktails';
 import SearchResults from './components/SearchResults';
+import Error from './components/Error';
 import { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
@@ -12,7 +13,6 @@ function App() {
 
   const ofAge = () => {
     setUserOfAge(true);
-    console.log(userOfAge)
     localStorage.setItem('isUserOfAge', JSON.stringify(true));
 
   };
@@ -27,7 +27,6 @@ function App() {
     const isUserOfAge = JSON.parse(localStorage.getItem('isUserOfAge'));
     if (isUserOfAge !== null) {
       setUserOfAge(isUserOfAge);
-      console.log(userOfAge)
     }
   }, []);
 
@@ -40,6 +39,7 @@ function App() {
           <Route path="/cocktails" element={<CocktailList />} />
           <Route path="/cocktails/:id" element={<FilteredCocktails />} />
           <Route path="/searchresults/:name" element={<SearchResults />} />
+          <Route path="/404" element={< Error />}/>
         </Routes>
       </header>
     </div>

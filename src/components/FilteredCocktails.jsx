@@ -13,7 +13,6 @@ export default function FilteredCocktails() {
     useEffect(() => {
         let selectedCocktail = async () => {
             const response = await axios.get(ID_URL+(id))
-            console.log(response.data)
             setDrink(response.data.drinks[0])
         }
         selectedCocktail()
