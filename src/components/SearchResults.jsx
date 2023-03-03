@@ -17,7 +17,7 @@ export default function Search(){
               const response = await axios.get(SEARCH_URL+ name)
               setDrink(response.data.drinks[0])
             } catch (error) {
-              navigate('/404')
+              navigate('/404?')
             }
         }
         searchedCocktail()

@@ -38,8 +38,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/cocktails" element={<CocktailList />} />
           <Route path="/cocktails/:id" element={<FilteredCocktails />} />
-          <Route path="/searchresults/:name" element={<SearchResults />} />
-          <Route path="/404" element={< Error />}/>
+          <Route path="/searchresults/:name?" element={<SearchResults />} />
+          <Route path="/404?" element={< Error />}/>
         </Routes>
       </header>
     </div>
