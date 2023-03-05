@@ -14,7 +14,6 @@ function App() {
   const ofAge = () => {
     setUserOfAge(true);
     localStorage.setItem('isUserOfAge', JSON.stringify(true));
-
   };
 
   const notOfAge = () => {
